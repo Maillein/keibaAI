@@ -1,0 +1,9 @@
+services:
+  keiba-ai:
+    build:
+      context: .
+      dockerfile: ./ai/Dockerfile
+    volumes:
+      - ./ai:/app
+    user: 1000:1000
+    tty: true
